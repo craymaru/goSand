@@ -1,9 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os/user"
+	"time"
+)
 
 func init() {
 	fmt.Println("Init.")
+	fmt.Println(time.Now())
+	fmt.Println(user.Current())
 }
 
 func hello() {
